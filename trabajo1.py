@@ -42,6 +42,16 @@ def pedir_json(endpoint,params):
 """ EXTRACCION FULL """
 # traer todos los registros de /artwork-types, recorriendo todas las paginas y devolverlos como DataFrame de panda.
 
-
+def extraer_full(endpoint) :
+  registros = []
+  pagina = 1
+  while True:
+    datos = pedir_json(endpoint, {"page": pagina, "limit": LIMITE_POR_PAGINA})
+    registros.extend(datos["data"])
+    if pagina >= datos["pagination"]["total_pages"]:
+      break
+    pagina += 1
+  print(f"FULL {endpoint}: {len(registros)} registros")
+  return pd.DataFrame(registros)
 
 print("todo joya") # usado para chequear mientras trabajaba de que estaba todo ok
