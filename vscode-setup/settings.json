@@ -1,0 +1,123 @@
+  {
+  // ---------- Tema base + paleta "La Gran Ola" ----------
+  "workbench.colorTheme": "Dark Modern",
+  "workbench.iconTheme": "material-icon-theme",
+
+  "workbench.colorCustomizations": {
+    "editor.background": "#0F1B2D",
+    "editor.foreground": "#EDE3CC",
+    "editor.lineHighlightBackground": "#16263D",
+    "editor.lineHighlightBorder": "#00000000",
+    "editor.selectionBackground": "#2B4E7E99",
+    "editor.findMatchBackground": "#D6B37A55",
+    "editorCursor.foreground": "#D6B37A",
+    "editorLineNumber.foreground": "#3D5675",
+    "editorLineNumber.activeForeground": "#A9CFD6",
+    "editorIndentGuide.background1": "#1C2D45",
+    "editorIndentGuide.activeBackground1": "#3D6A9E",
+    "editorBracketMatch.border": "#7FB3BF",
+    "editorWidget.background": "#0B1524",
+
+    "sideBar.background": "#0B1524",
+    "sideBar.foreground": "#C9D6DF",
+    "sideBarSectionHeader.background": "#0B1524",
+    "activityBar.background": "#08111E",
+    "activityBar.foreground": "#A9CFD6",
+    "activityBar.inactiveForeground": "#3D5675",
+    "activityBarBadge.background": "#D6B37A",
+    "activityBarBadge.foreground": "#0F1B2D",
+    "titleBar.activeBackground": "#08111E",
+    "titleBar.activeForeground": "#EDE3CC",
+    "statusBar.background": "#08111E",
+    "statusBar.foreground": "#A9CFD6",
+    "statusBar.debuggingBackground": "#D6B37A",
+    "statusBar.debuggingForeground": "#0F1B2D",
+
+    "tab.activeBackground": "#0F1B2D",
+    "tab.activeForeground": "#EDE3CC",
+    "tab.activeBorderTop": "#7FB3BF",
+    "tab.inactiveBackground": "#0B1524",
+    "tab.inactiveForeground": "#6B7B8F",
+    "editorGroupHeader.tabsBackground": "#0B1524",
+
+    "panel.background": "#0B1524",
+    "panel.border": "#1C2D45",
+    "terminal.background": "#0B1524",
+    "terminal.foreground": "#EDE3CC",
+    "terminal.ansiBlue": "#3D6A9E",
+    "terminal.ansiCyan": "#7FB3BF",
+    "terminal.ansiYellow": "#D6B37A",
+    "terminal.ansiGreen": "#9CC5A1",
+    "terminal.ansiRed": "#E07A5F",
+
+    "list.activeSelectionBackground": "#2B4E7E",
+    "list.hoverBackground": "#16263D",
+    "focusBorder": "#3D6A9E",
+    "button.background": "#2B4E7E",
+    "button.hoverBackground": "#3D6A9E",
+    "badge.background": "#2B4E7E",
+
+    "editorError.foreground": "#E07A5F",
+    "editorWarning.foreground": "#D6B37A",
+    "errorLens.errorForeground": "#E07A5F",
+    "errorLens.warningForeground": "#D6B37A",
+    "errorLens.errorBackground": "#E07A5F14",
+    "errorLens.warningBackground": "#D6B37A14"
+  },
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      { "scope": ["comment", "punctuation.definition.comment"], "settings": { "foreground": "#6B7B8F", "fontStyle": "italic" } },
+      { "scope": ["string", "string.quoted.docstring"], "settings": { "foreground": "#D6B37A" } },
+      { "scope": ["keyword", "storage.type", "storage.modifier", "keyword.control"], "settings": { "foreground": "#7FB3BF", "fontStyle": "bold" } },
+      { "scope": ["entity.name.function", "support.function", "meta.function-call.generic"], "settings": { "foreground": "#A9CFD6" } },
+      { "scope": ["entity.name.type", "entity.name.class", "support.class"], "settings": { "foreground": "#9EC5E8" } },
+      { "scope": ["constant.numeric", "constant.language"], "settings": { "foreground": "#E0B07F" } },
+      { "scope": ["variable.parameter"], "settings": { "foreground": "#C9D6DF", "fontStyle": "italic" } },
+      { "scope": ["keyword.operator", "punctuation"], "settings": { "foreground": "#8FA3B8" } },
+      { "scope": ["entity.name.function.decorator", "meta.decorator"], "settings": { "foreground": "#D6B37A" } }
+    ]
+  },
+  "editor.semanticHighlighting.enabled": true,
+
+  // ---------- Letra y lectura ----------
+  "editor.fontFamily": "'JetBrains Mono'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 1.6,
+  "terminal.integrated.fontSize": 14,
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "all",
+  "editor.cursorBlinking": "smooth",
+  "editor.smoothScrolling": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.rulers": [],
+  "editor.wordWrap": "off",
+  "workbench.startupEditor": "none",
+  "explorer.compactFolders": false,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // ---------- Python ----------
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4
+  },
+  "python.analysis.typeCheckingMode": "off",
+  "python.terminal.activateEnvironment": true,
+
+  // ---------- Error Lens: el error en la misma línea ----------
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+
+  // ---------- Fondo con la imagen (extensión "background") ----------
+  // Cambiá la ruta por donde guardes fondo_ola.jpg (barras normales /, no \).
+  "background.fullscreen": {
+    "images": ["file:///C:/Users/cseifar/Pictures/fondo_ola.jpg"],
+    "opacity": 0.035,
+    "size": "cover",
+    "position": "center"
+  },
+  "background.enabled": true
+}
